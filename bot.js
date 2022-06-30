@@ -14,7 +14,7 @@ async function request() {
     try {
         const response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-30-09/8/1/")
         const data = await response.json()   
-             ctx.reply('response.status')
+             ctx.reply(response.status)
         for (let i = 1; i <= 1; i++) {
             score_dealer = data.items.results[i].results.score_dealer
             score_player = data.items.results[i].results.score_player
